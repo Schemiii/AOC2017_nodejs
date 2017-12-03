@@ -9,8 +9,10 @@ export function format (input: string): number[][] {
   }
   return r
 }
-/*
+
 export function checksum (spreadsheet: number[][]): number {
-  return 12
+  const max = (v) => Math.max.apply(null, v)
+  const min = (v) => Math.min.apply(null, v)
+  const sumDiff = (r, v) => r + max(v) - min(v)
+  return spreadsheet.reduce(sumDiff, 0)
 }
-*/

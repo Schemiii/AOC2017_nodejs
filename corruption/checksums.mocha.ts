@@ -26,39 +26,10 @@ describe('spreadsheet', () => {
       assert(sheet.reduce((r, v) => r + v.reduce(sum), 0) === 55, 'sum of sheet is 55')
     })
   })
-  /*
-  describe('first row', () => {
-    it('first row largest value is 9', () => {
-      assert(spreadsheet, 'ok')
-    })
-    it('first row smallest value is 1', () => {
-
-    })
-    it('first rows difference is 8', () => {
-
+  describe('checksum', () => {
+    it('checksum is 18', () => {
+      let cs = checksum.checksum(checksum.format(spreadsheet))
+      assert(cs === 18, 'checksum of sheet is 18')
     })
   })
-  describe('second row', () => {
-    it('first row largest value is 9', () => {
-
-    })
-    it('first row smallest value is 1', () => {
-
-    })
-    it('first rows difference is 8', () => {
-
-    })
-  })
-  describe('third row', () => {
-    it('third row largest value is 8', () => {
-
-    })
-    it('third row smallest value is 2', () => {
-
-    })
-    it('third rows difference is 6', () => {
-
-    })
-  })
-  */
 })
