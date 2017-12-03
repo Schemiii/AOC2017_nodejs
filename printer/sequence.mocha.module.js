@@ -16,7 +16,6 @@ describe('sequencer part one', () => {
     assert(sequencer.seq(input) === 9, '91212129 does produce a sum of 9')
   })
 })
-/*
 describe('sequencer part two', () => {
   const sequencer = require('./sequence')
   const assert = require('assert')
@@ -35,11 +34,10 @@ describe('sequencer part two', () => {
   })
   it('123123 produces 12', () => {
     input = '123123'.split('')
-    assert(sequencer.circle(input) === 1, '123123 produces 1')
+    assert(sequencer.circle(input) === 12, '123123 produces 12')
   })
   it('12131415 produces 4', () => {
     input = '12131415'.split('')
     assert(sequencer.circle(input) === 4, '12131415 produces 4')
   })
 })
-*/

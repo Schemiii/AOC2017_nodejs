@@ -4,7 +4,7 @@
   "description": "some fun puzzles solved with nodejs",
   "main": "index.js",
   "scripts": {
-    "test": "standard && mocha printer/printer.mocha.module.js"
+    "test": "standard && mocha ./**/*mocha*.js"
   },
   "repository": {
     "type": "git",
