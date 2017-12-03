@@ -4,6 +4,7 @@ import * as checksum from './checksum'
 
 describe('spreadsheet', () => {
   const spreadsheet = `5 1 9 5\n7 5 3\n2 4 6 8`
+  const anotherSheet = `5 9 2 8\n 9 4 7 3\n 3 8 6 5`
   let sheet: number[][]
   describe('converts a spreadsheet string to a two dimensional array', () => {
     const sum = (r, e) => r + e
@@ -30,6 +31,13 @@ describe('spreadsheet', () => {
     it('checksum is 18', () => {
       let cs = checksum.checksum(checksum.format(spreadsheet))
       assert(cs === 18, 'checksum of sheet is 18')
+    })
+  })
+  describe('sum of even divisible numbers', () => {
+    it('checksum of another sheet is 9', () => {
+      let t = checksum.format(anotherSheet)
+      let k = checksum.checksumEvenDivisble(t)
+      assert(k === 9, 'evenly number is 9')
     })
   })
 })
