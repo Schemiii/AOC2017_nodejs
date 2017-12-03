@@ -1,0 +1,37 @@
+{
+  "name": "nodequiz",
+  "version": "1.0.0",
+  "description": "some fun puzzles solved with nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && mocha printer/printer.mocha.module.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Schemiii/Schemiii_fun_nodejs.git"
+  },
+  "keywords": [
+    "nodejs",
+    "adventofcode",
+    "fun"
+  ],
+  "author": "schemiii",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Schemiii/Schemiii_fun_nodejs/issues"
+  },
+  "homepage": "https://github.com/Schemiii/Schemiii_fun_nodejs#readme",
+  "devDependencies": {
+    "eslint": "^4.12.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "install": "^0.10.2",
+    "mocha": "^4.0.1",
+    "nodemon": "^1.12.1",
+    "npm": "^5.5.1",
+    "standard": "^10.0.3"
+  }
+}
