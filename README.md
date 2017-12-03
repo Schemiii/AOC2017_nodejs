@@ -1,1 +1,1 @@
-puzzles solves with nodejs for fun
+puzzles solved with nodejs for fun
