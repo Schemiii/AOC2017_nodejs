@@ -4,7 +4,7 @@
   "description": "some fun puzzles solved with nodejs",
   "main": "index.js",
   "scripts": {
-    "test": "standard && mocha ./**/*mocha*.js"
+    "test": "standard ./printer && mocha ./printer/*mocha*.js && standard --parser typescript-eslint-parser --plugin typescript ./**/*.ts && mocha -r ts-node/register ./**/*mocha*.ts"
   },
   "repository": {
     "type": "git",
@@ -22,16 +22,23 @@
   },
   "homepage": "https://github.com/Schemiii/Schemiii_fun_nodejs#readme",
   "devDependencies": {
-    "eslint": "^4.12.1",
+    "@types/mocha": "^2.2.44",
+    "@types/node": "^8.0.54",
+    "eslint": "^3.19.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-node": "^5.2.1",
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-standard": "^3.0.1",
+    "eslint-plugin-typescript": "^0.8.1",
     "install": "^0.10.2",
     "mocha": "^4.0.1",
     "nodemon": "^1.12.1",
     "npm": "^5.5.1",
-    "standard": "^10.0.3"
+    "standard": "^10.0.3",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.6.2",
+    "typescript-eslint-parser": "^9.0.1",
+    "typings": "^2.1.1"
   }
 }
