@@ -4,7 +4,9 @@
   "description": "some fun puzzles solved with nodejs",
   "main": "index.js",
   "scripts": {
-    "test": "standard ./printer && mocha ./printer/*mocha*.js && standard --parser typescript-eslint-parser --plugin typescript ./**/*.ts && mocha -r ts-node/register ./**/*mocha*.ts"
+    "test": "npm run lint && npm run mocha",
+    "mocha": "mocha ./printer_1/*mocha*.js && mocha -r ts-node/register ./**/*mocha*.ts",
+    "lint": "standard ./printer && standard --parser typescript-eslint-parser --plugin typescript ./**/*.ts"
   },
   "repository": {
     "type": "git",

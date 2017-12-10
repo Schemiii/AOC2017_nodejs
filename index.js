@@ -1,3 +1,3 @@
 module.exports = {
-  sequence: require('./printer/sequence')
+  sequence: require('./printer_1/sequence')
 }
