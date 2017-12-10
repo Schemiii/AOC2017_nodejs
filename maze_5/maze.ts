@@ -11,9 +11,9 @@ export class Maze {
   private _pSteps: number = 0
   private _type: MazeStepType
 
-  constructor (private _instructions: number[], private _type: MazeStepType) {
+  constructor (private _instructions: number[], type: MazeStepType) {
     this._instructions = _instructions
-    this._type = _type
+    this._type = type
   }
 
   step (): boolean {
@@ -41,10 +41,6 @@ export class Maze {
 
   get steps (): number {
     return this._nSteps
-  }
-
-  get pointerSteps (): number {
-    return this._pSteps
   }
 
   toString (maxLength): string {

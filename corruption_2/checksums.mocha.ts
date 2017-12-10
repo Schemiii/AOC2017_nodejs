@@ -2,7 +2,7 @@
 import * as assert from 'assert'
 import * as checksum from './checksum'
 
-describe('spreadsheet', () => {
+describe('corruption.spreadsheet', () => {
   const spreadsheet = `5 1 9 5\n7 5 3\n2 4 6 8`
   const anotherSheet = `5 9 2 8\n 9 4 7 3\n 3 8 6 5`
   let sheet: number[][]
