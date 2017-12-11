@@ -24,9 +24,10 @@
   },
   "homepage": "https://github.com/Schemiii/Schemiii_fun_nodejs#readme",
   "devDependencies": {
+    "@types/core-js": "^0.9.43",
     "@types/mocha": "^2.2.44",
-    "@types/node": "^8.0.54",
-    "eslint": "^3.19.0",
+    "@types/node": "^8.0.57",
+    "eslint": "^4.13.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-node": "^5.2.1",
