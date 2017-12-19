@@ -7,7 +7,8 @@ fs.readFile(path.join(__dirname, 'input'), (err, result) => {
     process.exit(1)
   }
   let towers: Tower[] = []
-  let tis = result.toString().split('\n')
+  let input = result.toString()
+  let tis = input.split('\n')
   tis.forEach((ti) => {
     let t = ti.split(' ')
     let name = t.splice(0, 1)[0]
@@ -43,5 +44,8 @@ fs.readFile(path.join(__dirname, 'input'), (err, result) => {
       rootNode.depth = td
     }
   })
-  console.log(rootNode)
+
+  rootNode.node.subtowers.forEach((t) => {
+    console.log(TowerFunctions.towerWeight(t))
+  })
 })
