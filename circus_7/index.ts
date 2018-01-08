@@ -45,7 +45,10 @@ fs.readFile(path.join(__dirname, 'input'), (err, result) => {
     }
   })
 
-  rootNode.node.subtowers.forEach((t) => {
-    console.log(TowerFunctions.towerWeight(t))
+  let t: Tower = rootNode.node.subtowers[rootNode.node.subtowers.length - 1].subtowers[2]
+
+    //TowerFunctions.findUnbalancedTower(rootNode.node)
+  t.subtowers.forEach((t) => {
+    console.log(`Tower ${t.name} with weight ${t.id} has a weight of ${TowerFunctions.towerWeight(t)}`)
   })
 })
