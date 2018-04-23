@@ -25,15 +25,15 @@ export class TowerFunctions {
     }, 0)
   }
 
-  static findUnbalancedTower(tower: Tower): object {
+  static findUnbalancedTower (tower: Tower): object {
     let i: number
-    if(tower.subtowers.length === 0){
+    if (tower.subtowers.length === 0) {
       return null
     }
     for (i = 0; i < tower.subtowers.length - 1; i++) {
       let t1 = tower.subtowers[i]
       let t2 = tower.subtowers[i + 1]
-      if(this.towerWeight(t1) != this.towerWeight(t2)){
+      if (this.towerWeight(t1) !== this.towerWeight(t2)) {
         return tower
       }
     }
@@ -42,5 +42,4 @@ export class TowerFunctions {
       return k || r
     }, null)
   }
-
 }
